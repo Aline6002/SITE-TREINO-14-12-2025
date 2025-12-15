@@ -1,11 +1,11 @@
 const allBooks = [
-    {
+    /*{
         title: "Orgulho e Preconceito",
         author: "Jane Austen",
         coverUrl: "img/orgulhoPreconceito.jpg",
         description: "Um romance de costumes e classes que narra a complexa relação entre Elizabeth Bennet e o reservado Sr. Darcy. O livro explora temas como reputação, casamento, distinção de classes e a superação de julgamentos apressados e falhas de comunicação.",
         genre: "Clássico"
-    },
+    },*/
     {
         title: "Saga After (6 Livros)",
         author: "Anna Todd",
@@ -13,6 +13,22 @@ const allBooks = [
         description: "Série completa (6 volumes) que narra o intenso e tumultuado relacionamento 'New Adult' entre a metódica Tessa Young e o misterioso Hardin Scott. A saga explora paixão, segredos e amadurecimento, abrangendo os volumes: 'After', 'Depois da Verdade', 'Depois do Desencontro', 'Depois da Esperança', 'Depois Para Sempre' e a prequela 'Before'.",
         genre: "New Adult / Romance",
         linkPastaPDF: "https://drive.google.com/drive/folders/1t_wd3cwH1P_nvxkq3agzz1qB9QUBfskn?usp=drive_link"
+    },
+    {
+        title: "Heartstopper (Série de Quadrinhos)",
+        author: "Alice Oseman",
+        coverUrl: "img/heartstopper.pNg",
+        description: "Série de webcomics e graphic novels (5 volumes) que acompanha o desenvolvimento do doce relacionamento entre Charlie Spring e Nick Nelson. A série aborda amizade, amor, bissexualidade, homossexualidade e a importância da saúde mental.",
+        genre: "Young Adult / Romance / LGBTQIA+",
+        linkPastaPDF: "https://drive.google.com/drive/folders/1CRP-VjMslWlD4hqfPf9iSAtu0Dv6zvgA?usp=drive_link" // Link da pasta Heartstopper
+    },
+    {
+        title: "Com Amor, Simon",
+        author: "Becky Albertalli",
+        coverUrl: "img/simon.jpg",
+        description: "O livro que deu origem ao filme. Simon Spier é um adolescente gay que ainda não saiu do armário e troca e-mails secretos com um garoto anônimo da sua escola, conhecido como 'Blue'. Quando Simon é chantageado, ele precisa lutar para manter seu segredo e descobrir a identidade de Blue.",
+        genre: "Young Adult / Romance / LGBTQIA+",
+        linkPastaPDF: "https://drive.google.com/file/d/1wEWFMnB6NZ7QflGrleCfe2OzvlDgxXiZ/view?usp=drive_link" // Link do PDF de Simon
     },
     {
         title: "Dom Quixote",
@@ -39,7 +55,15 @@ const allBooks = [
         linkPastaPDF: "https://drive.google.com/drive/folders/1JncDgVMR1FcR22hE2L5jdgiO_dfslD8T?usp=drive_link"
     },
     {
-        title: "Saga Bridgerton (9 Livros/Volumes)",
+        title: "Trilogia Culpados",
+        author: "Mercedes Ron",
+        coverUrl: "img/CULPABLES.jpg", // Certifique-se de que esta imagem exista
+        description: "Série de três volumes que narra a intensa e proibida história de amor entre Noah, que se muda para Los Angeles com sua mãe, e Nick, seu novo e charmoso meio-irmão. A trilogia inclui: 'Minha Culpa', 'Sua Culpa' e 'Nossa Culpa'.",
+        genre: "New Adult / Romance",
+        linkPastaPDF: "https://drive.google.com/drive/folders/1KG1Ge9zs1TjJiUY_8RBwxTlZKxVc3COo?usp=drive_link"
+    },
+    {
+        title: "Saga Bridgerton (9 Livros)",
         author: "Julia Quinn",
         coverUrl: "img/bridgerton9.webp",
         description: "Coleção de 8 romances principais focados nos irmãos Bridgerton, mais o volume extra com os segundos epílogos. Subtítulos principais: O Duque e Eu, O Visconde Que Me Amava, Um Perfeito Cavalheiro, Sedução ao Amanhecer, Para Sir Phillip, Com Amor, O Conde Enfeitiçado, Um Beijo Inesperado e A Caminho do Altar. O nono volume é 'E Viveram Felizes Para Sempre'.",
