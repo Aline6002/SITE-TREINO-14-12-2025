@@ -9,4 +9,4 @@ Configuração GitHub
 git config --global user.name Aline6002
 git config --global user.email alinerenata6002@gmail.com
 
-será que agora vai? apaguei o repositório e criei novamente
+será que agora vai? apaguei o repositório e criei novamente: não resolveu
