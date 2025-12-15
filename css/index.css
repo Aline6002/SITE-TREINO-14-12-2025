@@ -2,7 +2,7 @@
 
 :root {
     --primary-color: #3f51b5;
-    --secondary-color: #ff9800;
+    --secondary-color: #501f5f;
     --text-color: #333;
     --bg-color: #f4f7f6;
     --card-bg: #ffffff;
@@ -168,7 +168,7 @@ header {
 .genre-tag {
     font-size: 0.8em;
     color: var(--secondary-color);
-    background-color: #ffc10740;
+    background-color: #4907ff40;
     padding: 3px 8px;
     border-radius: 12px;
     display: inline-block;
@@ -202,7 +202,7 @@ header {
 }
 
 .pdf-link:hover {
-    background-color: #e68a00;
+    background-color: #65138b;
 }
 
 /* -------------------------------------- */
@@ -233,7 +233,7 @@ header {
 
 #prev-page-btn:hover,
 #next-page-btn:hover {
-    background-color: #e68a00;
+    background-color: #5c0464;
 }
 
 #prev-page-btn:disabled {

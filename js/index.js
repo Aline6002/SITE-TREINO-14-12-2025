@@ -1,64 +1,39 @@
 const allBooks = [
     {
-        title: "Oliver Twist",
-        author: "Charles Dickens",
-        coverUrl: "img/OliverTwist.webp", 
-        description: "Um clássico da ficção social. Acompanha a jornada de Oliver, um órfão que foge de um orfanato opressor e cai nas garras de um grupo de ladrões e batedores de carteira no submundo sombrio da Londres vitoriana. Uma crítica contundente à pobreza e à injustiça social.",
-        genre: "Clássico"
-    },
-    {
         title: "Orgulho e Preconceito",
         author: "Jane Austen",
-        coverUrl: "img/orgulhoPreconceito.jpg", 
+        coverUrl: "img/orgulhoPreconceito.jpg",
         description: "Um romance de costumes e classes que narra a complexa relação entre Elizabeth Bennet e o reservado Sr. Darcy. O livro explora temas como reputação, casamento, distinção de classes e a superação de julgamentos apressados e falhas de comunicação.",
         genre: "Clássico"
     },
     {
+        title: "Saga After (6 Livros)",
+        author: "Anna Todd",
+        coverUrl: "img/aftersaga.jpg",
+        description: "Série completa (6 volumes) que narra o intenso e tumultuado relacionamento 'New Adult' entre a metódica Tessa Young e o misterioso Hardin Scott. A saga explora paixão, segredos e amadurecimento, abrangendo os volumes: 'After', 'Depois da Verdade', 'Depois do Desencontro', 'Depois da Esperança', 'Depois Para Sempre' e a prequela 'Before'.", 
+        genre: "New Adult / Romance",
+        linkPastaPDF: "https://drive.google.com/drive/folders/1t_wd3cwH1P_nvxkq3agzz1qB9QUBfskn?usp=drive_link"
+    },
+    {
         title: "Dom Quixote",
         author: "Miguel de Cervantes",
-        coverUrl: "img/dom-quixote.webp", 
+        coverUrl: "img/dom-quixote.jpg",
         description: "A aventura de um cavaleiro sonhador. Alonso Quijano, um fidalgo espanhol de meia-idade, enlouquece lendo romances de cavalaria e decide se tornar o cavaleiro andante Dom Quixote de La Mancha. Ao lado de seu fiel escudeiro, Sancho Pança, ele parte em uma jornada cômica e melancólica, misturando realidade e fantasia.",
-        genre: "Clássico"
+        genre: "Clássico",
+        linkPastaPDF: "https://drive.google.com/file/d/16X7bWR3EO__aTLz4w5O_gfhI3MFXB-yi/view?usp=drive_link" // LINK DO ARQUIVO SOLTO
     },
     {
-        title: "Guerra e Paz",
-        author: "Liev Tolstói",
-        coverUrl: "img/guerra-paz.webp", 
-        description: "Uma saga histórica épica que segue a vida de cinco famílias aristocráticas russas durante a invasão napoleônica de 1812. O livro alterna entre a tensão dos campos de batalha e os dramas pessoais, explorando filosofia, história, amor e o sentido da vida em meio ao caos da guerra.",
-        genre: "Clássico"
-    },
-    {
-        title: "1984",
-        author: "George Orwell",
-        coverUrl: "img/1984.jpg", 
-        description: "Um romance distópico sobre vigilância, onde a vida é controlada pelo 'Grande Irmão' e pelo Partido. A história segue Winston Smith, que trabalha na reescrita da história, enquanto ele secretamente questiona o regime totalitário, arriscando tudo em busca de liberdade e amor.",
-        genre: "Ficção Científica"
-    },
-    {
-        title: "Duna",
-        author: "Frank Herbert",
-        coverUrl: "img/duna.jpg", 
-        description: "Uma saga interplanetária política e ecológica. Situada em um futuro distante, a história narra a luta pelo controle de Arrakis, um planeta desértico, a única fonte da especiaria 'melange', que prolonga a vida e permite viagens espaciais. Paul Atreides emerge como o líder messiânico dessa revolução.",
-        genre: "Ficção Científica"
-    },
-    {
-        title: "Neuromancer",
-        author: "William Gibson",
-        coverUrl: "img/neuromancer.jpg", 
-        description: "O marco do gênero cyberpunk. Case é um ex-hacker que tem seu sistema nervoso danificado após uma traição. Ele é recrutado para um último trabalho complexo que o leva aos limites da inteligência artificial, da realidade virtual e da exploração do ciberespaço.",
-        genre: "Ficção Científica"
-    },
-    {
-        title: "Fahrenheit 451",
-        author: "Ray Bradbury",
-        coverUrl: "img/fahrenheit.jpg", 
-        description: "Em uma sociedade futurista onde bombeiros queimam livros, pois o conhecimento é considerado perigoso. O bombeiro Guy Montag começa a questionar seu papel após conhecer uma jovem que o faz refletir sobre a importância da memória, da literatura e do pensamento crítico.",
-        genre: "Ficção Científica"
+        title: "Vermelho, Branco e Sangue Azul",
+        author: "Casey McQuiston",
+        coverUrl: "img/vermelho-branco-sangue-azul.JPG",
+        description: "A história foca no relacionamento secreto entre Alex Claremont-Diaz, o Primeiro Filho dos EUA, e o Príncipe Henry da Grã-Bretanha. O que começa como uma rivalidade pública e forçada transforma-se em um romance de alto risco político e pessoal.",
+        genre: "New Adult / Romance / LGBTQIA+",
+        linkPastaPDF: "https://drive.google.com/file/d/1_kV8QxdL-yu-otnJ10HKlLGxLqecSAYl/view?usp=drive_link"
     },
     {
         title: "Diário de um Banana: A Saga Completa",
         author: "Jeff Kinney",
-        coverUrl: "img/sagaDiarioDeUmBanana.jpg", 
+        coverUrl: "img/sagaDiarioDeUmBanana.jpg",
         description: "Acompanhe as hilárias e desastrosas aventuras de Greg Heffley, um garoto na transição para a adolescência, em seus 19 livros publicados. A saga aborda a escola, a família e a luta para ser popular, tudo contado através de seus cadernos rabiscados.",
         genre: "Infantojuvenil",
         linkPastaPDF: "https://drive.google.com/drive/folders/1JncDgVMR1FcR22hE2L5jdgiO_dfslD8T?usp=drive_link"
@@ -67,8 +42,8 @@ const allBooks = [
 
 // Elementos DOM
 const bookDisplay = document.getElementById('book-display');
-const prevPageBtn = document.getElementById('prev-page-btn'); 
-const nextPageBtn = document.getElementById('next-page-btn'); 
+const prevPageBtn = document.getElementById('prev-page-btn');
+const nextPageBtn = document.getElementById('next-page-btn');
 const searchInput = document.getElementById('search-input');
 const searchBtn = document.getElementById('search-btn');
 const resultsContainer = document.getElementById('results-container');
@@ -76,7 +51,7 @@ const genreSelect = document.getElementById('genre-select');
 
 let currentBooks = [...allBooks];
 let currentPage = 0;
-const booksPerPage = 4; 
+const booksPerPage = 4;
 
 /**
  * Função para criar o HTML de um único item de livro.
@@ -99,23 +74,31 @@ function createBookItem(book) {
     const author = document.createElement('span');
     author.className = 'author';
     author.textContent = book.author;
-    
+
     const genre = document.createElement('p');
     genre.className = 'genre-tag';
-    genre.textContent = `Gênero: ${book.genre}`;
+    genre.textContent = `Gênero: ${book.genre} `;
 
     const description = document.createElement('p');
     description.className = 'book-description-short';
-    description.textContent = book.description; 
-    
-    // NOVO: Adiciona o link da pasta PDF se ele existir
+    description.textContent = book.description;
+
+    // LÓGICA DE LINK: Adiciona o link da pasta/arquivo PDF se ele existir
     if (book.linkPastaPDF) {
         const link = document.createElement('a');
         link.href = book.linkPastaPDF;
         link.target = '_blank'; // Abre em nova aba
-        link.textContent = 'Acessar PDFs da Saga (Google Drive)';
         link.className = 'pdf-link';
+
+        // Determina o texto do link com base se é uma pasta ou um arquivo
+        const isFolder = book.linkPastaPDF.includes('/folders/');
         
+        if (isFolder) {
+            link.textContent = 'Acessar PDFs da Saga (Google Drive)';
+        } else {
+            link.textContent = 'Acessar PDF (Google Drive)'; 
+        }
+
         infoDiv.appendChild(title);
         infoDiv.appendChild(author);
         infoDiv.appendChild(genre);
@@ -138,7 +121,7 @@ function createBookItem(book) {
  */
 function displayBooksPage(books) {
     bookDisplay.innerHTML = '';
-    
+
     const start = currentPage * booksPerPage;
     const end = start + booksPerPage;
     const booksToShow = books.slice(start, end);
@@ -150,7 +133,7 @@ function displayBooksPage(books) {
         nextPageBtn.disabled = true;
         return;
     }
-    
+
     booksToShow.forEach(book => {
         bookDisplay.appendChild(createBookItem(book));
     });
@@ -163,8 +146,8 @@ function displayBooksPage(books) {
         nextPageBtn.textContent = "Voltar ao Início";
         nextPageBtn.disabled = false;
     } else if (nextPageBtn.disabled && totalPages <= 1) {
-         nextPageBtn.disabled = true;
-         nextPageBtn.textContent = "Próxima Página"; 
+        nextPageBtn.disabled = true;
+        nextPageBtn.textContent = "Próxima Página";
     } else {
         nextPageBtn.textContent = "Próxima Página";
     }
@@ -185,14 +168,14 @@ function loadPrevPage() {
  */
 function loadNextPage() {
     const totalPages = Math.ceil(currentBooks.length / booksPerPage);
-    
+
     // Se estiver na última página, volta para a primeira
     if ((currentPage + 1) * booksPerPage >= currentBooks.length) {
         currentPage = 0;
     } else {
         currentPage++;
     }
-    
+
     displayBooksPage(currentBooks);
 }
 
@@ -201,16 +184,16 @@ function loadNextPage() {
  */
 function searchBooks() {
     const searchTerm = searchInput.value.toLowerCase();
-    
+
     if (!searchTerm.trim()) {
         filterBooksByGenre();
         return;
     }
-    
+
     // Esconde a área de 4 livros/botões e mostra os resultados em lista
     bookDisplay.classList.add('hidden');
-    prevPageBtn.classList.add('hidden'); 
-    nextPageBtn.classList.add('hidden'); 
+    prevPageBtn.classList.add('hidden');
+    nextPageBtn.classList.add('hidden');
     resultsContainer.innerHTML = '';
 
     // Filtra pelo título, autor OU descrição
@@ -239,7 +222,7 @@ function displaySearchResults(results) {
 
         const img = document.createElement('img');
         img.src = book.coverUrl;
-        img.alt = `Capa de ${book.title}`;
+        img.alt = `Capa de ${book.title} `;
 
         const details = document.createElement('div');
         details.className = 'result-details';
@@ -248,8 +231,8 @@ function displaySearchResults(results) {
         title.textContent = book.title;
 
         const author = document.createElement('p');
-        author.textContent = `Por: ${book.author}`; 
-        
+        author.textContent = `Por: ${book.author} `;
+
         // Exibe a descrição na lista de busca (com limite de 120 caracteres para a lista)
         const description = document.createElement('p');
         description.textContent = book.description.substring(0, 120) + '...';
@@ -259,7 +242,7 @@ function displaySearchResults(results) {
 
         details.appendChild(title);
         details.appendChild(author);
-        details.appendChild(description); 
+        details.appendChild(description);
         item.appendChild(img);
         item.appendChild(details);
 
@@ -268,7 +251,7 @@ function displaySearchResults(results) {
 }
 
 /**
- * Filtra os livros pelo gênero selecionado no dropdown.
+ * Filtra os livros pelo gênero selecionado no dropdown (LÓGICA AJUSTADA).
  */
 function filterBooksByGenre() {
     const selectedGenre = genreSelect.value;
@@ -276,25 +259,28 @@ function filterBooksByGenre() {
     if (selectedGenre === 'Todos') {
         currentBooks = [...allBooks];
     } else {
-        currentBooks = allBooks.filter(book => book.genre === selectedGenre);
+        // Filtra para ver se a string do gênero do livro CONTÉM o gênero selecionado
+        currentBooks = allBooks.filter(book => 
+            book.genre.toLowerCase().includes(selectedGenre.toLowerCase())
+        );
     }
-    
+
     // Reabilita a visualização de 4 livros e botões
     bookDisplay.classList.remove('hidden');
     prevPageBtn.classList.remove('hidden');
     nextPageBtn.classList.remove('hidden');
     resultsContainer.innerHTML = '';
-    
+
     // Reseta a paginação e mostra a primeira página do novo filtro
     currentPage = 0;
     searchInput.value = '';
-    
+
     displayBooksPage(currentBooks);
 }
 
 // Event Listeners
-prevPageBtn.addEventListener('click', loadPrevPage); 
-nextPageBtn.addEventListener('click', loadNextPage); 
+prevPageBtn.addEventListener('click', loadPrevPage);
+nextPageBtn.addEventListener('click', loadNextPage);
 searchBtn.addEventListener('click', searchBooks);
 searchInput.addEventListener('keyup', (e) => {
     if (e.key === 'Enter') {
@@ -305,14 +291,33 @@ genreSelect.addEventListener('change', filterBooksByGenre);
 
 // Inicialização
 document.addEventListener('DOMContentLoaded', () => {
-    // Garante que o novo gênero seja incluído no dropdown
-    const genres = ['Todos', ...new Set(allBooks.map(book => book.genre))];
-    genres.forEach(genre => {
-        const option = document.createElement('option');
-        option.value = genre;
-        option.textContent = genre;
-        genreSelect.appendChild(option);
+    // ----------------------------------------------------
+    // LÓGICA DE POPULAÇÃO DE GÊNEROS CORRIGIDA E MELHORADA
+    // ----------------------------------------------------
+    
+    // 1. Coleta todos os gêneros, separando aqueles com "/"
+    let allUniqueGenres = [];
+    allBooks.forEach(book => {
+        // Divide o gênero por "/" e remove espaços em branco extras
+        const genresArray = book.genre.split('/').map(g => g.trim());
+        allUniqueGenres.push(...genresArray);
     });
+    
+    // 2. Cria um Set para garantir que cada gênero apareça apenas uma vez
+    const genres = ['Todos', ...new Set(allUniqueGenres)];
+    
+    // 3. Popula o dropdown
+    genres.forEach(genre => {
+        // Ignora strings vazias que podem surgir de separações
+        if (genre) {
+            const option = document.createElement('option');
+            option.value = genre;
+            option.textContent = genre;
+            genreSelect.appendChild(option);
+        }
+    });
+    
+    // ----------------------------------------------------
     
     filterBooksByGenre();
 });
