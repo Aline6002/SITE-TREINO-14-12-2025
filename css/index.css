@@ -96,17 +96,15 @@ header {
     background-color: #303f9f;
 }
 
-/* --- Estilos da Exibição de Livros (AGORA COM LAYOUT DE 2 COLUNAS PADRÃO) --- */
+/* --- Estilos da Exibição de Livros --- */
 .book-display {
     width: 100%;
     max-width: 1100px;
     display: flex;
     justify-content: center;
-    /* Centraliza os itens */
     gap: 30px;
     margin-bottom: 30px;
     flex-wrap: wrap;
-    /* Permite quebrar linha */
 }
 
 .book-item {
@@ -114,11 +112,10 @@ header {
     border-radius: 10px;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
     padding: 15px;
-    /* AJUSTE CHAVE: 2 livros por linha, com espaço para descrição */
     width: 45%;
     min-width: 300px;
 
-    /* Configuração interna para alinhar imagem e info em linha */
+    /* AJUSTE CHAVE 1: Faz o book-item ocupar toda a altura do container */
     display: flex;
     flex-direction: row;
     align-items: flex-start;
@@ -133,7 +130,6 @@ header {
 }
 
 .book-item img {
-    /* Imagem agora tem um tamanho fixo lateral, com altura maior */
     width: 120px;
     height: 180px;
     max-width: none;
@@ -144,16 +140,18 @@ header {
     background-color: #f0f0f0;
 }
 
+/* AJUSTE CHAVE 2: Configura o container de informações para usar Flexbox vertical */
 .book-info-compact {
     flex-grow: 1;
-    /* Permite que o texto preencha o restante do espaço */
+    display: flex;
+    flex-direction: column; 
+    height: 100%;
 }
 
 .book-info-compact h3 {
     color: var(--primary-color);
     font-size: 1.2em;
     margin: 0 0 5px 0;
-    /* Permite que o título quebre a linha */
     white-space: normal;
 }
 
@@ -175,30 +173,41 @@ header {
     margin-bottom: 8px;
 }
 
-/* --- ESTILO DA DESCRIÇÃO CURTA (AGORA VISÍVEL) --- */
+/* --- ESTILO DA DESCRIÇÃO CURTA --- */
 .book-description-short {
     display: block !important;
-    /* VISÍVEL EM TODAS AS TELAS */
     margin-top: 5px;
+    
+    /* NOVO AJUSTE: Garante espaçamento entre a descrição e o botão */
+    margin-bottom: 10px; 
+    
     font-size: 0.85em;
     color: #555;
     line-height: 1.4;
     text-align: justify;
+    
+    flex-grow: 1; 
 }
 
-/* Adicione no final do seu css/index.css */
+/* --- Estilos do Botão Link (PDF) --- */
 .pdf-link {
-    display: inline-block;
-    margin-top: 10px;
-    padding: 5px 10px;
+    display: block;
+
+    /* Mantém margin-top: auto para empurrar para o final */
+    margin-top: auto; 
+    
+    padding: 8px 15px;
     background-color: var(--secondary-color);
-    /* Laranja */
     color: white !important;
     text-decoration: none;
     border-radius: 5px;
     font-size: 0.9em;
     font-weight: bold;
     transition: background-color 0.2s;
+
+    width: fit-content;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .pdf-link:hover {
@@ -206,7 +215,6 @@ header {
 }
 
 /* -------------------------------------- */
-
 
 /* --- Estilos dos Controles de Paginação --- */
 .pagination-controls {

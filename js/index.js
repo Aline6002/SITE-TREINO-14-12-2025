@@ -10,7 +10,7 @@ const allBooks = [
         title: "Saga After (6 Livros)",
         author: "Anna Todd",
         coverUrl: "img/aftersaga.jpg",
-        description: "Série completa (6 volumes) que narra o intenso e tumultuado relacionamento 'New Adult' entre a metódica Tessa Young e o misterioso Hardin Scott. A saga explora paixão, segredos e amadurecimento, abrangendo os volumes: 'After', 'Depois da Verdade', 'Depois do Desencontro', 'Depois da Esperança', 'Depois Para Sempre' e a prequela 'Before'.", 
+        description: "Série completa (6 volumes) que narra o intenso e tumultuado relacionamento 'New Adult' entre a metódica Tessa Young e o misterioso Hardin Scott. A saga explora paixão, segredos e amadurecimento, abrangendo os volumes: 'After', 'Depois da Verdade', 'Depois do Desencontro', 'Depois da Esperança', 'Depois Para Sempre' e a prequela 'Before'.",
         genre: "New Adult / Romance",
         linkPastaPDF: "https://drive.google.com/drive/folders/1t_wd3cwH1P_nvxkq3agzz1qB9QUBfskn?usp=drive_link"
     },
@@ -25,7 +25,7 @@ const allBooks = [
     {
         title: "Vermelho, Branco e Sangue Azul",
         author: "Casey McQuiston",
-        coverUrl: "img/vermelho-branco-sangue-azul.JPG",
+        coverUrl: "img/vermelho-branco-sangue-azul.jpg",
         description: "A história foca no relacionamento secreto entre Alex Claremont-Diaz, o Primeiro Filho dos EUA, e o Príncipe Henry da Grã-Bretanha. O que começa como uma rivalidade pública e forçada transforma-se em um romance de alto risco político e pessoal.",
         genre: "New Adult / Romance / LGBTQIA+",
         linkPastaPDF: "https://drive.google.com/file/d/1_kV8QxdL-yu-otnJ10HKlLGxLqecSAYl/view?usp=drive_link"
@@ -37,6 +37,14 @@ const allBooks = [
         description: "Acompanhe as hilárias e desastrosas aventuras de Greg Heffley, um garoto na transição para a adolescência, em seus 19 livros publicados. A saga aborda a escola, a família e a luta para ser popular, tudo contado através de seus cadernos rabiscados.",
         genre: "Infantojuvenil",
         linkPastaPDF: "https://drive.google.com/drive/folders/1JncDgVMR1FcR22hE2L5jdgiO_dfslD8T?usp=drive_link"
+    },
+    {
+        title: "Saga Bridgerton (9 Livros/Volumes)",
+        author: "Julia Quinn",
+        coverUrl: "img/bridgerton9.webp",
+        description: "Coleção de 8 romances principais focados nos irmãos Bridgerton, mais o volume extra com os segundos epílogos. Subtítulos principais: O Duque e Eu, O Visconde Que Me Amava, Um Perfeito Cavalheiro, Sedução ao Amanhecer, Para Sir Phillip, Com Amor, O Conde Enfeitiçado, Um Beijo Inesperado e A Caminho do Altar. O nono volume é 'E Viveram Felizes Para Sempre'.",
+        genre: "Romance de Época",
+        linkPastaPDF: "https://drive.google.com/drive/folders/1fhZOfZfRLvzZ8lqq5TwyhTydOol9tQPE?usp=drive_link"
     }
 ];
 
@@ -92,11 +100,11 @@ function createBookItem(book) {
 
         // Determina o texto do link com base se é uma pasta ou um arquivo
         const isFolder = book.linkPastaPDF.includes('/folders/');
-        
+
         if (isFolder) {
             link.textContent = 'Acessar PDFs da Saga (Google Drive)';
         } else {
-            link.textContent = 'Acessar PDF (Google Drive)'; 
+            link.textContent = 'Acessar PDF (Google Drive)';
         }
 
         infoDiv.appendChild(title);
@@ -255,12 +263,12 @@ function displaySearchResults(results) {
  */
 function filterBooksByGenre() {
     const selectedGenre = genreSelect.value;
-    
+
     if (selectedGenre === 'Todos') {
         currentBooks = [...allBooks];
     } else {
         // Filtra para ver se a string do gênero do livro CONTÉM o gênero selecionado
-        currentBooks = allBooks.filter(book => 
+        currentBooks = allBooks.filter(book =>
             book.genre.toLowerCase().includes(selectedGenre.toLowerCase())
         );
     }
@@ -294,7 +302,7 @@ document.addEventListener('DOMContentLoaded', () => {
     // ----------------------------------------------------
     // LÓGICA DE POPULAÇÃO DE GÊNEROS CORRIGIDA E MELHORADA
     // ----------------------------------------------------
-    
+
     // 1. Coleta todos os gêneros, separando aqueles com "/"
     let allUniqueGenres = [];
     allBooks.forEach(book => {
@@ -302,10 +310,10 @@ document.addEventListener('DOMContentLoaded', () => {
         const genresArray = book.genre.split('/').map(g => g.trim());
         allUniqueGenres.push(...genresArray);
     });
-    
+
     // 2. Cria um Set para garantir que cada gênero apareça apenas uma vez
     const genres = ['Todos', ...new Set(allUniqueGenres)];
-    
+
     // 3. Popula o dropdown
     genres.forEach(genre => {
         // Ignora strings vazias que podem surgir de separações
@@ -316,8 +324,8 @@ document.addEventListener('DOMContentLoaded', () => {
             genreSelect.appendChild(option);
         }
     });
-    
+
     // ----------------------------------------------------
-    
+
     filterBooksByGenre();
 });
