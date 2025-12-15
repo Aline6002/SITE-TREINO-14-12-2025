@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recomendação e Busca de Livros</title>
+    <link rel="stylesheet" href="css/index.css">
+</head>
+
+<body>
+
+    <header>
+        <h1>📖 Indicações Literárias 📖</h1>
+        <p>Sua próxima grande leitura espera por você.</p>
+    </header>
+
+    <main class="container">
+
+        <div class="controls-area">
+            <div class="filter-area">
+                <label for="genre-select">Gênero:</label>
+                <select id="genre-select"></select>
+            </div>
+
+            <div class="search-area">
+                <input type="text" id="search-input" placeholder="Buscar por título ou autor...">
+                <button id="search-btn">Buscar</button>
+            </div>
+        </div>
+
+        <div id="results-container" class="results-container">
+        </div>
+
+        <div id="book-display" class="book-display">
+        </div>
+
+        <div id="book-display" class="book-display">
+        </div>
+
+        <div class="pagination-controls">
+            <button id="prev-page-btn" disabled>Página Anterior</button>
+            <button id="next-page-btn">Próxima Página</button>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 BookFinder. Todos os direitos reservados.</p>
+    </footer>
+
+    <script src="js/index.js"></script>
+</body>
+
+</html>

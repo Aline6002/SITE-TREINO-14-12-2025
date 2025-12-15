@@ -1,0 +1,11 @@
+shift + alt + f alinha o código
+tenho que adicionar mais livros
+saga diario de um banana adicionada (somente os primeiros 19 livros)
+
+não está indo o commit para o github
+
+Configuração GitHub
+
+git config --global user.name Aline6002
+git config --global user.email alinerenata6002@gmail.com
+
