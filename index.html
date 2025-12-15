@@ -11,7 +11,7 @@
 <body>
 
     <header>
-        <h1>📖 Indicações Literárias 📖</h1>
+        <h1>📖 ReehBooks - Indicações Literárias 📖</h1>
         <p>Sua próxima grande leitura espera por você.</p>
     </header>
 
@@ -35,19 +35,63 @@
         <div id="book-display" class="book-display">
         </div>
 
-        <div id="book-display" class="book-display">
-        </div>
-
         <div class="pagination-controls">
             <button id="prev-page-btn" disabled>Página Anterior</button>
             <button id="next-page-btn">Próxima Página</button>
         </div>
+
+        <section id="contact-form-section">
+            <h2>Fale Conosco</h2>
+            
+            <form id="contact-form">
+                <div class="form-group">
+                    <label for="name">Seu Nome:</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+                
+                <div class="form-group">
+                    <label for="message">Mensagem:</label>
+                    <textarea id="message" name="message" rows="5" required></textarea>
+                </div>
+                
+                <button type="button" id="submit-btn" onclick="sendMessage()">Enviar pelo Telegram</button>
+            </form>
+        </section>
+
     </main>
 
     <footer>
-        <p>&copy; 2025 BookFinder. Todos os direitos reservados.</p>
+        <p>&copy; 2025 ReehBooks. Todos os direitos reservados.</p>
     </footer>
 
+    <script>
+        function sendMessage() {
+            // É crucial que os IDs no seu HTML sejam 'name' e 'message'
+            const nome = document.getElementById('name').value.trim();
+            const mensagem = document.getElementById('message').value.trim();
+            
+            const telegramUser = 'Reeh200'; // O seu username do Telegram
+
+            // Validação
+            if (!nome || !mensagem) {
+                alert('Por favor, preencha seu nome e a mensagem antes de enviar.');
+                return;
+            }
+
+            // Construir a mensagem formatada para o Telegram
+            const textoCompleto = `Novo Contato da Biblioteca:\n\nNome: ${nome}\n\nMensagem: ${mensagem}`;
+            
+            // Codificar o texto para ser seguro na URL
+            const encodedMessage = encodeURIComponent(textoCompleto);
+
+            // Montar o link do Telegram (usando o username e o parâmetro 'text')
+            const link = `https://t.me/${telegramUser}?text=${encodedMessage}`;
+            
+            // Abrir o link em uma nova aba
+            window.open(link, '_blank');
+        }
+    </script>
+    
     <script src="js/index.js"></script>
 </body>
 
