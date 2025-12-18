@@ -72,12 +72,35 @@ const allBooks = [
         linkPastaPDF: "https://drive.google.com/drive/folders/1fhZOfZfRLvzZ8lqq5TwyhTydOol9tQPE?usp=drive_link"
     },
     {
-        // CORRIGIDO AQUI: Padronizado para os nomes em Inglês para o script funcionar
         title: "O Diário de Anne Frank",
         author: "Anne Frank",
         genre: "História",
         description: "O relato íntimo de uma jovem escondida durante a Segunda Guerra Mundial. Um testemunho poderoso sobre esperança e resiliência.",
         coverUrl: "img/anneFrank.jpeg",
         linkPastaPDF: "https://drive.google.com/file/d/1_Oi1GUiaSRV8CQ5hMuZGvtcSxDHi74Er/view?usp=drive_link"
+    },
+    {
+        title: "A Gente se Vê na Madruga",
+        author: "Pedro H. Oliveira",
+        genre: "Romance / LGBTQIA+",
+        description: "Uma obra que mergulha nas reflexões e sentimentos que surgem no silêncio da noite, explorando a fundo as conexões humanas.", 
+        coverUrl: "img/madruga.jpeg",
+        linkPastaPDF: "https://drive.google.com/file/d/1CeIIyzbbXWoiRt1WMdNvBjlwvXrkKQ_e/view?usp=drive_link"
+    },
+    {
+        title: "A Gente Mira no Amor e Acerta na Solidão",
+        author: "Ana Suy",
+        genre: "Psicologia / Não Ficção",
+        description: "Um livro que nos convida a pensar sobre as relações amorosas e a solidão de forma acolhedora, mostrando que um não exclui o outro.",
+        coverUrl: "img/amorSolidao.jpg",
+        linkPastaPDF: "https://drive.google.com/file/d/1e_xKsMrs98mZQN_fKeWLmWTl4o8JUJV2/view?usp=drive_link"
+    },
+    {
+        title: "Gente Ansiosa",
+        author: "Fredrik Backman",
+        genre: "Ficção / Comédia",
+        description: "Uma comédia emocionante sobre um assalto a banco que nunca aconteceu e como pessoas estranhas podem ter mais em comum do que imaginam.",
+        coverUrl: "img/genteAnsiosa.jpg",
+        linkPastaPDF: "https://drive.google.com/file/d/1PCBjp0h8kYY0yaXvgQZqnrII_L19CvFr/view?usp=drive_link"
     }
 ];
