@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lista de Desejos - Pedir Livro</title>
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/desejos.css">
+</head>
+<body>
+    <header>
+        <button id="theme-toggle">🌙</button>
+        <h1>✨ Lista de Desejos ✨</h1>
+        <p>Não encontrou o que procurava? Peça aqui!</p>
+    </header>
+
+    <main class="container">
+        <section class="form-container">
+            <h2>Qual livro você gostaria de ver aqui?</h2>
+            <form id="wishlist-form">
+                <div class="input-group">
+                    <label for="book-name">Nome do Livro:</label>
+                    <input type="text" id="book-name" placeholder="Ex: Harry Potter e a Pedra Filosofal" required>
+                </div>
+                <div class="input-group">
+                    <label for="author-name">Autor (opcional):</label>
+                    <input type="text" id="author-name" placeholder="Ex: J.K. Rowling">
+                </div>
+                <button type="submit" class="btn-send">Enviar Pedido para o Telegram 🚀</button>
+            </form>
+            <div id="status-msg"></div>
+        </section>
+
+        <div class="navigation-area">
+            <a href="index.html" class="btn-back">Voltar para a Biblioteca</a>
+        </div>
+    </main>
+
+    <script src="js/desejos.js"></script>
+</body>
+</html>

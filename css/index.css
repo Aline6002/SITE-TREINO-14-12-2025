@@ -436,40 +436,77 @@ footer {
     transition: background-color 0.3s; /* Suaviza a troca de cor */
 }
 
-/* Estilo unificado para o botão flutuante de sobre */
-.sobre-btn {
+/* Estilo Base para os Botões Flutuantes (Unificação) */
+.sobre-btn, .wishlist-float-btn {
     position: fixed;
-    bottom: 20px;       /* Distância do fundo */
-    right: 20px;        /* Distância da direita */
-    width: 50px;        /* Largura fixa para ser redondo */
-    height: 50px;       /* Altura fixa para ser redondo */
-    background-color: var(--primary-color);
-    color: white;
+    right: 20px;
+    width: 65px; /* Tamanho médio unificado */
+    height: 65px;
+    color: white !important;
     text-decoration: none;
-    
-    /* Centraliza o ícone ℹ️ dentro do círculo */
     display: flex;
     align-items: center;
     justify-content: center;
-    
-    font-size: 24px;
-    border-radius: 50%; /* Faz o botão ser um círculo perfeito */
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
-    z-index: 10000;     /* Garante que fique acima do footer */
-    opacity: 0.7;
-    transition: all 0.3s ease;
+    text-align: center;
+    border-radius: 50%;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    z-index: 10000;
+    font-weight: bold;
+    transition: all 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    opacity: 0.9; /* Opacidade igual para ambos */
+    padding: 8px;
+    font-family: inherit;
+}
+
+/* --- BOTÃO SOBRE (Base) --- */
+.sobre-btn {
+    bottom: 20px;
+    background-color: var(--primary-color);
+    font-size: 22px; /* Ícone ℹ️ maior */
+}
+
+/* --- BOTÃO LISTA DE DESEJOS (Acima) --- */
+.wishlist-float-btn {
+    bottom: 95px; /* Espaçamento harmônico */
+    background-color: #e91e63; /* Rosa vibrante */
+    font-size: 10px;
+    line-height: 1.1;
+    word-wrap: break-word;
+}
+
+/* Efeitos de Hover Unificados */
+.sobre-btn:hover, .wishlist-float-btn:hover {
+    opacity: 1;
+    transform: scale(1.1);
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3);
 }
 
 .sobre-btn:hover {
-    opacity: 1;
-    transform: scale(1.1) rotate(10deg); /* Aumenta e gira levemente */
     background-color: var(--secondary-color);
 }
 
-/* Garante visibilidade no Modo Escuro */
+.wishlist-float-btn:hover {
+    background-color: #ff4081;
+}
+
+/* Ajuste no Modo Escuro */
 body.dark-mode .sobre-btn {
-    background-color: var(--secondary-color);
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.6);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
+}
+
+body.dark-mode .wishlist-float-btn {
+    box-shadow: 0 4px 15px rgba(233, 30, 99, 0.3);
+}
+
+/* Responsividade Mobile */
+@media (max-width: 600px) {
+    .sobre-btn, .wishlist-float-btn {
+        width: 55px;
+        height: 55px;
+        right: 15px;
+    }
+    .sobre-btn { bottom: 15px; font-size: 18px; }
+    .wishlist-float-btn { bottom: 80px; font-size: 9px; }
 }
 
 /* --- Responsividade (Ajustes para Celulares) --- */
