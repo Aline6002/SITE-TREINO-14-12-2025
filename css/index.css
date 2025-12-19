@@ -440,8 +440,8 @@ footer {
 .sobre-btn, .wishlist-float-btn {
     position: fixed;
     right: 20px;
-    width: 65px; /* Tamanho médio unificado */
-    height: 65px;
+    width: 60px; /* Tamanho médio unificado */
+    height: 60px;
     color: white !important;
     text-decoration: none;
     display: flex;
@@ -468,7 +468,7 @@ footer {
 /* --- BOTÃO LISTA DE DESEJOS (Acima) --- */
 .wishlist-float-btn {
     bottom: 95px; /* Espaçamento harmônico */
-    background-color: #e91e63; /* Rosa vibrante */
+    background-color: #e91eb675; /* Rosa vibrante */
     font-size: 10px;
     line-height: 1.1;
     word-wrap: break-word;
@@ -486,7 +486,7 @@ footer {
 }
 
 .wishlist-float-btn:hover {
-    background-color: #ff4081;
+    background-color: #ff409977;
 }
 
 /* Ajuste no Modo Escuro */

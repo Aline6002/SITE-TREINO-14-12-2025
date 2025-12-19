@@ -10,7 +10,7 @@ const allBooks = [
     {
         title: "Heartstopper (Série de Quadrinhos)",
         author: "Alice Oseman",
-        coverUrl: "img/heartstopper.pNg",
+        coverUrl: "img/heartstopper.png",
         description: "Série de webcomics e graphic novels (5 volumes) que acompanha o desenvolvimento do doce relacionamento entre Charlie Spring e Nick Nelson.",
         genre: "Young Adult / Romance / LGBTQIA+",
         linkPastaPDF: "https://drive.google.com/drive/folders/1CRP-VjMslWlD4hqfPf9iSAtu0Dv6zvgA?usp=drive_link"

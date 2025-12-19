@@ -165,9 +165,9 @@ header p {
     bottom: 20px;
     right: 20px;
     
-    /* Tamanho fixo para forçar a quebra do texto e ser redondo */
-    width: 70px; 
-    height: 70px;
+    /* Tamanho reduzido para 62px */
+    width: 62px; 
+    height: 62px;
     
     background-color: var(--primary-color);
     color: white !important;
@@ -179,11 +179,11 @@ header p {
     justify-content: center;
     text-align: center;
     
-    /* Ajuste da fonte para caber no círculo */
-    font-size: 11px;
+    /* Fonte levemente menor para acompanhar o novo tamanho */
+    font-size: 10px;
     font-weight: bold;
-    line-height: 1.2;
-    padding: 8px;
+    line-height: 1.1;
+    padding: 6px;
     
     border-radius: 50%;
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
@@ -198,16 +198,27 @@ header p {
 
 .links-btn:hover {
     opacity: 1;
-    transform: scale(1.1) rotate(5deg); /* Gira levemente para combinar com o estilo */
+    transform: scale(1.1) rotate(5deg);
     background-color: var(--secondary-color);
     box-shadow: 0 6px 15px rgba(0, 0, 0, 0.4);
+}
+
+/* Ajuste proporcional para mobile */
+@media (max-width: 600px) {
+    .links-btn {
+        width: 55px;
+        height: 55px;
+        font-size: 9px;
+        bottom: 15px;
+        right: 15px;
+    }
 }
 
 /* Ajuste para telas pequenas */
 @media (max-width: 600px) {
     .links-btn {
-        width: 60px;
-        height: 60px;
+        width: 55px;
+        height: 55px;
         font-size: 9px;
         bottom: 15px;
         right: 15px;
