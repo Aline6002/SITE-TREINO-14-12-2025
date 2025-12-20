@@ -5,7 +5,7 @@ const allBooks = [
         coverUrl: "img/aftersaga.jpg",
         description: "Série completa (6 volumes) que narra o intenso e tumultuado relacionamento 'New Adult' entre a metódica Tessa Young e o misterioso Hardin Scott.",
         genre: "New Adult / Romance",
-        linkPastaPDF: "https://drive.google.com/drive/folders/1t_wd3cwH1P_nvxkq3agzz1qB9QUBfskn?usp=drive_link"
+        linkPastaPDF: "https://drive.google.com/drive/folders/15J9mjbiDWWe1HpaQvpx9xIgPNqh1DRvk?usp=drive_link"
     },
     {
         title: "Heartstopper (Série de Quadrinhos)",
@@ -13,7 +13,7 @@ const allBooks = [
         coverUrl: "img/heartstopper.png",
         description: "Série de webcomics e graphic novels (5 volumes) que acompanha o desenvolvimento do doce relacionamento entre Charlie Spring e Nick Nelson.",
         genre: "Young Adult / Romance / LGBTQIA+",
-        linkPastaPDF: "https://drive.google.com/drive/folders/1CRP-VjMslWlD4hqfPf9iSAtu0Dv6zvgA?usp=drive_link"
+        linkPastaPDF: "https://drive.google.com/drive/folders/1BnsE4Vd3KyGc6RwYmQV5M18oftexKyfA?usp=drive_link"
     },
     {
         title: "Com Amor, Simon",
@@ -21,7 +21,7 @@ const allBooks = [
         coverUrl: "img/simon.jpg",
         description: "Simon Spier é um adolescente gay que troca e-mails secretos com um garoto anônimo. Quando é chantageado, precisa lutar para manter seu segredo.",
         genre: "Young Adult / Romance / LGBTQIA+",
-        linkPastaPDF: "https://drive.google.com/file/d/1wEWFMnB6NZ7QflGrleCfe2OzvlDgxXiZ/view?usp=drive_link"
+        linkPastaPDF: "https://drive.google.com/file/d/1v-7786SZ-kOs6fFe6XcPW2U4A0gutE3B/view?usp=drive_link"
     },
     {
         title: "Dom Quixote",
@@ -29,7 +29,7 @@ const allBooks = [
         coverUrl: "img/dom-quixote.jpg",
         description: "A aventura de um cavaleiro sonhador que enlouquece lendo romances de cavalaria e parte em uma jornada cômica com seu fiel escudeiro Sancho Pança.",
         genre: "Clássico",
-        linkPastaPDF: "https://drive.google.com/file/d/16X7bWR3EO__aTLz4w5O_gfhI3MFXB-yi/view?usp=drive_link"
+        linkPastaPDF: "https://drive.google.com/file/d/14HpirQr-udKiBeuA4AzUuV2GkgBrwDgt/view?usp=drive_link"
     },
     {
         title: "Vermelho, Branco e Sangue Azul",
@@ -37,7 +37,7 @@ const allBooks = [
         coverUrl: "img/vermelho-branco-sangue-azul.jpg",
         description: "A história foca no relacionamento secreto entre Alex, o Primeiro Filho dos EUA, e o Príncipe Henry da Grã-Bretanha.",
         genre: "New Adult / Romance / LGBTQIA+",
-        linkPastaPDF: "https://drive.google.com/file/d/1_kV8QxdL-yu-otnJ10HKlLGxLqecSAYl/view?usp=drive_link"
+        linkPastaPDF: "https://drive.google.com/file/d/1eWlB7bSFBBokLJih8p1RECPp08_8QGMA/view?usp=drive_link"
     },
     {
         title: "It: A Coisa",
@@ -45,7 +45,7 @@ const allBooks = [
         coverUrl: "img/it-a-coisa.webp",
         description: "Em Derry, o mal assume a forma de Pennywise. Sete amigos enfrentam seus piores pesadelos na infância e retornam adultos para destruir a entidade.",
         genre: "Terror",
-        linkPastaPDF: "https://drive.google.com/file/d/11dUggFhqm66seqJIX1-iRv_BfeNkrxky/view?usp=drive_link"
+        linkPastaPDF: "https://drive.google.com/file/d/1NpXnRW8x6lcwUiAWC7MkMxi8X3MuHG0_/view?usp=drive_link"
     },
     {
         title: "Diário de um Banana: A Saga Completa",
@@ -53,7 +53,7 @@ const allBooks = [
         coverUrl: "img/sagaDiarioDeUmBanana.jpg",
         description: "As hilárias aventuras de Greg Heffley em seus 19 livros. A saga aborda a escola, a família e a luta para ser popular.",
         genre: "Infantojuvenil",
-        linkPastaPDF: "https://drive.google.com/drive/folders/1JncDgVMR1FcR22hE2L5jdgiO_dfslD8T?usp=drive_link"
+        linkPastaPDF: "https://drive.google.com/drive/folders/11YsZ5Gun_gh2rt0tEpvP2gmWRRi2NI7w?usp=drive_link"
     },
     {
         title: "Trilogia Culpados",
@@ -61,7 +61,7 @@ const allBooks = [
         coverUrl: "img/CULPABLES.jpg",
         description: "Série que narra a intensa e proibida história de amor entre Noah e seu novo meio-irmão Nick em Los Angeles.",
         genre: "New Adult / Romance",
-        linkPastaPDF: "https://drive.google.com/drive/folders/1KG1Ge9zs1TjJiUY_8RBwxTlZKxVc3COo?usp=drive_link"
+        linkPastaPDF: "https://drive.google.com/drive/folders/1nbDf1CSsID4jf2d0Y2jsEr23v6RxCDSo?usp=drive_link"
     },
     {
         title: "Saga Bridgerton (9 Livros)",
@@ -69,7 +69,7 @@ const allBooks = [
         coverUrl: "img/bridgerton9.webp",
         description: "Coleção de romances focados nos irmãos Bridgerton, explorando o mercado matrimonial da alta sociedade londrina.",
         genre: "Romance de Época",
-        linkPastaPDF: "https://drive.google.com/drive/folders/1fhZOfZfRLvzZ8lqq5TwyhTydOol9tQPE?usp=drive_link"
+        linkPastaPDF: "https://drive.google.com/drive/folders/1SN-A_zuTHgmULwyMliCzKGzYYNr_pKN1?usp=drive_link"
     },
     {
         title: "O Diário de Anne Frank",
@@ -77,15 +77,15 @@ const allBooks = [
         genre: "História",
         description: "O relato íntimo de uma jovem escondida durante a Segunda Guerra Mundial. Um testemunho poderoso sobre esperança e resiliência.",
         coverUrl: "img/anneFrank.jpeg",
-        linkPastaPDF: "https://drive.google.com/file/d/1_Oi1GUiaSRV8CQ5hMuZGvtcSxDHi74Er/view?usp=drive_link"
+        linkPastaPDF: "https://drive.google.com/file/d/1Ucgtw1vIOkDsmgItapG67RthiSvA3ZY8/view?usp=drive_link"
     },
     {
         title: "A Gente se Vê na Madruga",
         author: "Pedro H. Oliveira",
         genre: "Romance / LGBTQIA+",
-        description: "Uma obra que mergulha nas reflexões e sentimentos que surgem no silêncio da noite, explorando a fundo as conexões humanas.", 
+        description: "Uma obra que mergulha nas reflexões e sentimentos que surgem no silêncio da noite, explorando a fundo as conexões humanas.",
         coverUrl: "img/madruga.jpeg",
-        linkPastaPDF: "https://drive.google.com/file/d/1CeIIyzbbXWoiRt1WMdNvBjlwvXrkKQ_e/view?usp=drive_link"
+        linkPastaPDF: "https://drive.google.com/file/d/1kVcFrUAd1ejNFFU5V1jfXj4HEw7piKDZ/view?usp=drive_link"
     },
     {
         title: "A Gente Mira no Amor e Acerta na Solidão",
@@ -93,7 +93,7 @@ const allBooks = [
         genre: "Psicologia / Não Ficção",
         description: "Um livro que nos convida a pensar sobre as relações amorosas e a solidão de forma acolhedora, mostrando que um não exclui o outro.",
         coverUrl: "img/amorSolidao.jpg",
-        linkPastaPDF: "https://drive.google.com/file/d/1e_xKsMrs98mZQN_fKeWLmWTl4o8JUJV2/view?usp=drive_link"
+        linkPastaPDF: "https://drive.google.com/file/d/1Mqi2-133bZ6yxhliXNWcm7kvywkkYKCr/view?usp=drive_link"
     },
     {
         title: "Gente Ansiosa",
@@ -101,6 +101,47 @@ const allBooks = [
         genre: "Ficção / Comédia",
         description: "Uma comédia emocionante sobre um assalto a banco que nunca aconteceu e como pessoas estranhas podem ter mais em comum do que imaginam.",
         coverUrl: "img/genteAnsiosa.jpg",
-        linkPastaPDF: "https://drive.google.com/file/d/1PCBjp0h8kYY0yaXvgQZqnrII_L19CvFr/view?usp=drive_link"
+        linkPastaPDF: "https://drive.google.com/file/d/1iAuPwFbWV7FtWEf52onerW-WSzJed-9Z/view?usp=drive_link"
+    },
+    {
+        title: "Enfodere-se!",
+        author: "Caio Carneiro",
+        genre: "Autoajuda / Desenvolvimento Pessoal",
+        description: "Um guia prático e motivacional para quem deseja ter mais confiança e assumir o controle da própria vida, transformando desafios em conquistas.",
+        coverUrl: "img/enfodere-se.jpg",
+        linkPastaPDF: "https://drive.google.com/file/d/19I1nKMOZUJCvmZFFcl24Tibx-zPriy8N/view?usp=drive_link"
+    },
+    {
+        title: "Trilogia: Através de Minha Janela",
+        author: "Ariana Godoy",
+        genre: "Romance / Saga",
+        description: "Acompanhe a história dos três irmãos Hidalgo: Ares, Artemis e Apolo. Uma trilogia intensa sobre desejos, segredos de família e amores que desafiam barreiras.",
+        coverUrl: "img/HIDALGOS.jpg",
+        linkPastaPDF: "LINK_DA_PASTA_COM_OS_3_LIVROS"
+    },
+    {
+        title: "Trilogia: A Barraca do Beijo e a Versão do Noah",
+        author: "Beth Reekles",
+        genre: "Romance",
+        description: "Elle se vê em uma situação complicada quando se apaixona por Noah, o irmão mais velho e galã do seu melhor amigo. A série acompanha os desafios desse namoro, as escolhas sobre o futuro e os mesmos eventos vistos pelo olhar do Noah.",
+        coverUrl: "img/barracaBeijo.jpg",
+        linkPastaPDF: "https://drive.google.com/drive/folders/1Ph1wEO8Yc_S1oqGib7kfKemS9tm1kDB5?usp=drive_link"
+    },
+    {
+        title: "Tudo o que meu coração grita",
+        author: "Gabriela Freitas",
+        genre: "Poesia / Reflexão",
+        description: "Uma reunião de textos sensíveis sobre as fases da vida, o processo de cura e o amadurecimento que vem através das experiências do coração.",
+        coverUrl: "img/coracaoGRITA.jpg",
+        linkPastaPDF: "https://drive.google.com/file/d/165kWJP5X34i_pJ-cAbkzbVaVQbaoVuiO/view?usp=sharing"
+    },
+    {
+        title: "Continência ao Amor",
+        author: "Tess Wakefield",
+        genre: "Romance",
+        description: "Cassie e Luke não poderiam ser mais diferentes, mas um casamento de conveniência por benefícios militares acaba transformando uma farsa em um sentimento real e intenso diante das dificuldades.",
+        coverUrl: "img/CONTINENCIA.jpg",
+        linkPastaPDF: "https://drive.google.com/file/d/12WBiSnKnANelwEablErNR4Ju4GeViiQB/view?usp=drive_link"
     }
+
 ];
