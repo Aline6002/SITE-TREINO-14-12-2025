@@ -4,7 +4,7 @@ const allBooks = [
         author: "Anna Todd",
         coverUrl: "img/aftersaga.jpg",
         description: "Série completa (6 volumes) que narra o intenso e tumultuado relacionamento 'New Adult' entre a metódica Tessa Young e o misterioso Hardin Scott.",
-        genre: "New Adult / Romance",
+        genre: "Romance",
         linkPastaPDF: "https://drive.google.com/drive/folders/15J9mjbiDWWe1HpaQvpx9xIgPNqh1DRvk?usp=drive_link"
     },
     {
@@ -12,7 +12,7 @@ const allBooks = [
         author: "Alice Oseman",
         coverUrl: "img/heartstopper.png",
         description: "Série de webcomics e graphic novels (5 volumes) que acompanha o desenvolvimento do doce relacionamento entre Charlie Spring e Nick Nelson.",
-        genre: "Young Adult / Romance / LGBTQIA+",
+        genre: "Romance / LGBTQIA+",
         linkPastaPDF: "https://drive.google.com/drive/folders/1BnsE4Vd3KyGc6RwYmQV5M18oftexKyfA?usp=drive_link"
     },
     {
@@ -20,7 +20,7 @@ const allBooks = [
         author: "Becky Albertalli",
         coverUrl: "img/simon.jpg",
         description: "Simon Spier é um adolescente gay que troca e-mails secretos com um garoto anônimo. Quando é chantageado, precisa lutar para manter seu segredo.",
-        genre: "Young Adult / Romance / LGBTQIA+",
+        genre: "Romance / LGBTQIA+",
         linkPastaPDF: "https://drive.google.com/file/d/1v-7786SZ-kOs6fFe6XcPW2U4A0gutE3B/view?usp=drive_link"
     },
     {
@@ -36,13 +36,13 @@ const allBooks = [
         author: "Casey McQuiston",
         coverUrl: "img/vermelho-branco-sangue-azul.jpg",
         description: "A história foca no relacionamento secreto entre Alex, o Primeiro Filho dos EUA, e o Príncipe Henry da Grã-Bretanha.",
-        genre: "New Adult / Romance / LGBTQIA+",
+        genre: "Romance / LGBTQIA+",
         linkPastaPDF: "https://drive.google.com/file/d/1eWlB7bSFBBokLJih8p1RECPp08_8QGMA/view?usp=drive_link"
     },
     {
         title: "It: A Coisa",
         author: "Stephen King",
-        coverUrl: "img/it-a-coisa.webp",
+        coverUrl: "img/it-a-coisa.jpg",
         description: "Em Derry, o mal assume a forma de Pennywise. Sete amigos enfrentam seus piores pesadelos na infância e retornam adultos para destruir a entidade.",
         genre: "Terror",
         linkPastaPDF: "https://drive.google.com/file/d/1NpXnRW8x6lcwUiAWC7MkMxi8X3MuHG0_/view?usp=drive_link"
@@ -52,7 +52,7 @@ const allBooks = [
         author: "Jeff Kinney",
         coverUrl: "img/sagaDiarioDeUmBanana.jpg",
         description: "As hilárias aventuras de Greg Heffley em seus 19 livros. A saga aborda a escola, a família e a luta para ser popular.",
-        genre: "Infantojuvenil",
+        genre: "Infantojuvenil / Comédia",
         linkPastaPDF: "https://drive.google.com/drive/folders/11YsZ5Gun_gh2rt0tEpvP2gmWRRi2NI7w?usp=drive_link"
     },
     {
@@ -60,15 +60,15 @@ const allBooks = [
         author: "Mercedes Ron",
         coverUrl: "img/CULPABLES.jpg",
         description: "Série que narra a intensa e proibida história de amor entre Noah e seu novo meio-irmão Nick em Los Angeles.",
-        genre: "New Adult / Romance",
+        genre: "Romance",
         linkPastaPDF: "https://drive.google.com/drive/folders/1nbDf1CSsID4jf2d0Y2jsEr23v6RxCDSo?usp=drive_link"
     },
     {
         title: "Saga Bridgerton (9 Livros)",
         author: "Julia Quinn",
-        coverUrl: "img/bridgerton9.webp",
+        coverUrl: "img/bridgerton9.jpg",
         description: "Coleção de romances focados nos irmãos Bridgerton, explorando o mercado matrimonial da alta sociedade londrina.",
-        genre: "Romance de Época",
+        genre: "Romance / De Época",
         linkPastaPDF: "https://drive.google.com/drive/folders/1SN-A_zuTHgmULwyMliCzKGzYYNr_pKN1?usp=drive_link"
     },
     {
@@ -114,7 +114,7 @@ const allBooks = [
     {
         title: "Trilogia: Através de Minha Janela",
         author: "Ariana Godoy",
-        genre: "Romance / Saga",
+        genre: "Romance",
         description: "Acompanhe a história dos três irmãos Hidalgo: Ares, Artemis e Apolo. Uma trilogia intensa sobre desejos, segredos de família e amores que desafiam barreiras.",
         coverUrl: "img/HIDALGOS.jpg",
         linkPastaPDF: "LINK_DA_PASTA_COM_OS_3_LIVROS"
@@ -142,6 +142,14 @@ const allBooks = [
         description: "Cassie e Luke não poderiam ser mais diferentes, mas um casamento de conveniência por benefícios militares acaba transformando uma farsa em um sentimento real e intenso diante das dificuldades.",
         coverUrl: "img/CONTINENCIA.jpg",
         linkPastaPDF: "https://drive.google.com/file/d/12WBiSnKnANelwEablErNR4Ju4GeViiQB/view?usp=drive_link"
-    }
+    },
+    {
+        title: "Série: Amores Improváveis",
+        author: "Elle Kennedy",
+        genre: "Romance",
+        description: "Acompanhe as histórias de amor e amadurecimento dos jogadores de hóquei da Universidade de Briar. Inclui os livros: O Acordo, O Erro, O Jogo, A Conquista e o encerramento da série, O Legado.",
+        coverUrl: "img/AmoresImprovaveis.jpg",
+        linkPastaPDF: "https://drive.google.com/drive/folders/1ypver3894ZH8SZt8JbDpvrl3dRtmG6N5?usp=drive_link"
+    },
 
 ];
