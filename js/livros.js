@@ -151,5 +151,69 @@ const allBooks = [
         coverUrl: "img/AmoresImprovaveis.jpg",
         linkPastaPDF: "https://drive.google.com/drive/folders/1ypver3894ZH8SZt8JbDpvrl3dRtmG6N5?usp=drive_link"
     },
+{
+        title: "O Véu Escarlate",
+        author: "Shelby Mahurin",
+        genre: "Fantasia / Romance",
+        description: "Spin-off da série Pássaro e Serpente, acompanha Célie Tremblay em uma jornada sombria repleta de vampiros, magia de sangue e mistérios em Belterra.",
+        coverUrl: "img/veu.jpg",
+        linkPastaPDF: "LINK_DA_SUA_PASTA_AQUI"
+    },
+    {
+        title: "O Deus e a Raposa",
+        author: "Sophie Kim",
+        genre: "Fantasia / Mitologia",
+        description: "Um deus caído e uma gumiho (raposa de nove caudas) precisam se unir em uma Nova Sinsi moderna para resolver uma série de crimes e enfrentar demônios.",
+        coverUrl: "img/deusRaposa.jpg",
+        linkPastaPDF: "LINK_DA_SUA_PASTA_AQUI"
+    },
+    {
+        title: "Olhos Prateados (FNAF)",
+        author: "Scott Cawthon & Kira Breed-Wrisley",
+        genre: "Terror / Suspense",
+        description: "Dez anos após os crimes na Pizzaria Freddy Fazbear’s, Charlie e seus amigos retornam à cidade e descobrem que os animatrônicos ainda escondem segredos letais.",
+        coverUrl: "img/olhosPrateados.jpg",
+        linkPastaPDF: "LINK_DA_SUA_PASTA_AQUI"
+    },
+    {
+        title: "Phantasma",
+        author: "Kaylie Smith",
+        genre: "Dark Fantasy Romance / Romance",
+        description: "Um romance gótico e sombrio onde uma jovem com habilidades espirituais entra em uma mansão assombrada e se envolve com um espírito perigoso.",
+        coverUrl: "img/phantasma.jpg",
+        linkPastaPDF: "LINK_DA_SUA_PASTA_AQUI"
+    },
+    {
+        title: "A Cidade dos Fantasmas",
+        author: "Victoria Schwab",
+        genre: "Fantasia / Juvenil / Aventura",
+        description: "Cassidy Blake pode ver fantasmas e, em uma viagem para Edimburgo, ela deve aprender a atravessar o véu e enfrentar espíritos que não querem ser esquecidos.",
+        coverUrl: "img/cidadeFantasmas.jpg",
+        linkPastaPDF: "LINK_DA_SUA_PASTA_AQUI"
+    },
+    {
+        title: "Série: Vicious Lost Boys",
+        author: "Nikki St. Crowe",
+        genre: "Romance / Dark Romance",
+        description: "Uma releitura picante e sombria de Peter Pan. Inclui os volumes: A Sombra da Terra do Nunca, A Rainha da Terra do Nunca e Os Príncipes da Terra do Nunca.",
+        coverUrl: "img/lostBoys.jpeg",
+        linkPastaPDF: "LINK_DA_SUA_PASTA_AQUI"
+    },
+    {
+        title: "A Garota Na Neve",
+        author: "Danya Kukafka",
+        genre: "Thriller / Suspense",
+        description: "Após o assassinato de uma jovem popular, a vida de três pessoas se entrelaça em uma investigação que revela as obsessões e segredos de uma pequena cidade.",
+        coverUrl: "img/AGarotaNaNeve.jpg",
+        linkPastaPDF: "LINK_DA_SUA_PASTA_AQUI"
+    },
+    {
+        title: "Mentirosos",
+        author: "E. Lockhart",
+        genre: "Suspense",
+        description: "Acompanhe a rica e aparentemente perfeita família Sinclair em sua ilha particular, onde um segredo terrível está escondido por trás de memórias fragmentadas.",
+        coverUrl: "img/Mentirosos.jpg",
+        linkPastaPDF: "LINK_DA_SUA_PASTA_AQUI"
+    }
 
 ];
