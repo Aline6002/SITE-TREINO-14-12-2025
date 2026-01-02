@@ -1,6 +1,7 @@
 const bookDisplay = document.getElementById('book-display');
 const prevPageBtn = document.getElementById('prev-page-btn');
 const nextPageBtn = document.getElementById('next-page-btn');
+const pageNumbersContainer = document.getElementById('page-numbers'); // ADICIONADO
 const searchInput = document.getElementById('search-input');
 const searchBtn = document.getElementById('search-btn');
 const resultsContainer = document.getElementById('results-container');
@@ -49,8 +50,8 @@ function createBookItem(book) {
         link.target = '_blank';
         link.className = 'pdf-link';
         // Ajuste inteligente para o texto do link
-        link.textContent = (book.title.includes('Trilogia') || book.title.includes('Série')) 
-            ? 'Acessar Coleção' 
+        link.textContent = (book.title.includes('Trilogia') || book.title.includes('Série'))
+            ? 'Acessar Coleção'
             : 'Acessar PDF';
         infoDiv.appendChild(link);
     }
@@ -58,6 +59,25 @@ function createBookItem(book) {
     item.appendChild(coverImg);
     item.appendChild(infoDiv);
     return item;
+}
+
+function renderPageNumbers(total) {
+    pageNumbersContainer.innerHTML = ''; // Limpa antes de gerar
+
+    for (let i = 0; i < total; i++) {
+        const btn = document.createElement('button');
+        btn.textContent = i + 1;
+        btn.className = 'page-num-btn';
+        if (i === currentPage) btn.classList.add('active');
+
+        btn.addEventListener('click', () => {
+            currentPage = i;
+            displayBooksPage(currentBooks);
+            window.scrollTo(0, 0); // Opcional: rola para o topo ao clicar
+        });
+
+        pageNumbersContainer.appendChild(btn);
+    }
 }
 
 function displayBooksPage(books) {
@@ -69,14 +89,18 @@ function displayBooksPage(books) {
 
     if (booksToShow.length === 0) {
         bookDisplay.innerHTML = '<p>Nenhum livro encontrado.</p>';
+        pageNumbersContainer.innerHTML = ''; // Limpa números se não houver livros
         return;
     }
 
     booksToShow.forEach(book => bookDisplay.appendChild(createBookItem(book)));
 
-    // Controle de Paginação
+    // Atualiza os botões numéricos
+    renderPageNumbers(totalPages);
+
+    // Controle de Paginação (Anterior/Próximo)
     prevPageBtn.disabled = currentPage === 0;
-    
+
     if (currentPage + 1 >= totalPages && totalPages > 1) {
         nextPageBtn.textContent = "Voltar ao Início";
         nextPageBtn.disabled = false;
@@ -88,28 +112,28 @@ function displayBooksPage(books) {
 
 // --- LÓGICA DE NAVEGAÇÃO E FILTRO ---
 
-function loadPrevPage() { 
-    if (currentPage > 0) { 
-        currentPage--; 
-        displayBooksPage(currentBooks); 
-    } 
+function loadPrevPage() {
+    if (currentPage > 0) {
+        currentPage--;
+        displayBooksPage(currentBooks);
+    }
 }
 
 function loadNextPage() {
     const totalPages = Math.ceil(currentBooks.length / booksPerPage);
-    if (currentPage + 1 >= totalPages) { 
-        currentPage = 0; 
-    } else { 
-        currentPage++; 
+    if (currentPage + 1 >= totalPages) {
+        currentPage = 0;
+    } else {
+        currentPage++;
     }
     displayBooksPage(currentBooks);
 }
 
 function searchBooks() {
     const term = searchInput.value.toLowerCase().trim();
-    if (!term) { 
-        filterBooksByGenre(); 
-        return; 
+    if (!term) {
+        filterBooksByGenre();
+        return;
     }
 
     bookDisplay.classList.add('hidden');
@@ -117,7 +141,7 @@ function searchBooks() {
     nextPageBtn.classList.add('hidden');
     resultsContainer.innerHTML = '';
 
-    const filtered = allBooks.filter(b => 
+    const filtered = allBooks.filter(b =>
         b.title.toLowerCase().includes(term) || b.author.toLowerCase().includes(term)
     );
 
@@ -142,12 +166,12 @@ function searchBooks() {
 
 function filterBooksByGenre() {
     const selected = genreSelect.value;
-    
+
     // Filtra considerando que o gênero pode ser uma string composta (ex: "Romance / Drama")
-    currentBooks = selected === 'Todos' 
-        ? [...allBooks] 
+    currentBooks = selected === 'Todos'
+        ? [...allBooks]
         : allBooks.filter(b => b.genre.split('/').map(g => g.trim()).includes(selected));
-    
+
     bookDisplay.classList.remove('hidden');
     prevPageBtn.classList.remove('hidden');
     nextPageBtn.classList.remove('hidden');
@@ -183,7 +207,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
     // 3. Limpar e Popular o Select
     genreSelect.innerHTML = '';
-    
+
     // Opção "Todos" com o total geral
     const optTodos = document.createElement('option');
     optTodos.value = 'Todos';
@@ -193,7 +217,7 @@ document.addEventListener('DOMContentLoaded', () => {
     // Outras opções
     sortedGenres.forEach(genre => {
         const opt = document.createElement('option');
-        opt.value = genre; 
+        opt.value = genre;
         opt.textContent = `${genre} (${genreCounts[genre]})`;
         genreSelect.appendChild(opt);
     });

@@ -214,6 +214,62 @@ const allBooks = [
         description: "Acompanhe a rica e aparentemente perfeita família Sinclair em sua ilha particular, onde um segredo terrível está escondido por trás de memórias fragmentadas.",
         coverUrl: "img/mentirosos.jpg",
         linkPastaPDF: "https://drive.google.com/file/d/1r-OUR9JkR1XZeX0oTT_cY_ZMur3Stzd9/view?usp=drive_link"
+    },
+    {
+        title: "Canção dos Ossos",
+        author: "Giu Domingues",
+        coverUrl: "img/cancao-dos-ossos.jpg",
+        description: "Uma fantasia nacional épica que mergulha em segredos ancestrais, ossos e o destino de Elena em uma jornada sombria.",
+        genre: "Ficção / Fantasia",
+        linkPastaPDF: "LINK_DO_SEU_DRIVE_AQUI"
+    },
+    {
+        title: "Casas Estranhas",
+        author: "Uketsu",
+        coverUrl: "img/casas-estranhas.jpg",
+        description: "Um mistério japonês viral sobre plantas de casas bizarras que escondem segredos terríveis e crimes indescritíveis.",
+        genre: "Mistério / Terror / Horror",
+        linkPastaPDF: "LINK_DO_SEU_DRIVE_AQUI"
+    },
+    {
+        title: "Chegue mais Perto (Pavores de Fazbear #4)",
+        author: "Scott Cawthon",
+        coverUrl: "img/chegue-mais-perto.jpg",
+        description: "No universo de Five Nights at Freddy's, contos de terror exploram o que acontece quando você ignora os avisos e se aproxima do perigo.",
+        genre: "Terror / Suspense",
+        linkPastaPDF: "LINK_DO_SEU_DRIVE_AQUI"
+    },
+    {
+        title: "O Gato Preto",
+        author: "Edgar Allan Poe",
+        coverUrl: "img/o-gato-preto.jpg",
+        description: "Um clássico do horror gótico que narra a descida de um homem à loucura e à perversidade, guiado pela presença de um gato misterioso.",
+        genre: "Clássico / Terror / Horror",
+        linkPastaPDF: "LINK_DO_SEU_DRIVE_AQUI"
+    },
+    {
+        title: "Império do Vampiro (Vol. 01)",
+        author: "Jay Kristoff",
+        coverUrl: "img/imperio-do-vampiro.jpg",
+        description: "Em um mundo onde o sol não nasce mais, Gabriel de León, o último dos Santos de Prata, conta a história do fim da humanidade.",
+        genre: "Fantasia",
+        linkPastaPDF: "LINK_DO_SEU_DRIVE_AQUI"
+    },
+    {
+        title: "O Despertar da Lua Caída",
+        author: "Sarah A. Parker",
+        genre: "Fantasia / Romance",
+        coverUrl: "img/o-despertar-da-lua-caida.jpg",
+        description: "Uma narrativa de fantasia rica em detalhes sobre magia esquecida, destinos entrelaçados e o despertar de um poder lunar.",
+        linkPastaPDF: "LINK_DO_SEU_DRIVE_AQUI"
+    },
+    {
+        title: "Quarta Asa",
+        author: "Rebecca Yarros",
+        coverUrl: "img/quarta-asa.jpg",
+        description: "Violet Sorrengail entra para o Quadrante dos Cavaleiros de Dragão, onde a única regra é: forme um vínculo ou morra.",
+        genre: "Fantasia / Romance",
+        linkPastaPDF: "LINK_DO_SEU_DRIVE_AQUI"
     }
 
 ];

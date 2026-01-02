@@ -425,6 +425,40 @@ header p {
     width: 65%;
 }
 
+/* Container principal */
+.pagination-controls {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    margin: 20px 0;
+}
+
+/* Botões numéricos */
+.page-num-btn {
+    background-color: #f8f9fa;
+    border: 1px solid #ddd;
+    padding: 5px 12px;
+    cursor: pointer;
+    border-radius: 4px;
+    transition: 0.3s;
+}
+
+.page-num-btn:hover {
+    background-color: #e2e6ea;
+}
+
+/* Botão da página atual */
+.page-num-btn.active {
+    background-color: #491f5a;
+    color: white;
+    border-color: #007bff;
+}
+
+.hidden {
+    display: none !important;
+}
+
 /* --- Rodapé --- */
 footer {
     background-color: var(--footer-bg);
