@@ -157,7 +157,7 @@ const allBooks = [
         genre: "Fantasia / Romance",
         description: "Spin-off da série Pássaro e Serpente, acompanha Célie Tremblay em uma jornada sombria repleta de vampiros, magia de sangue e mistérios em Belterra.",
         coverUrl: "img/veu.jpg",
-        linkPastaPDF: "LINK_DA_SUA_PASTA_AQUI"
+        linkPastaPDF: "https://drive.google.com/file/d/1NavBC95MlMWX-gcrn75JadVCJzOEoigU/view?usp=drive_link"
     },
     {
         title: "O Deus e a Raposa",
@@ -165,7 +165,7 @@ const allBooks = [
         genre: "Fantasia / Mitologia",
         description: "Um deus caído e uma gumiho (raposa de nove caudas) precisam se unir em uma Nova Sinsi moderna para resolver uma série de crimes e enfrentar demônios.",
         coverUrl: "img/deusRaposa.jpg",
-        linkPastaPDF: "LINK_DA_SUA_PASTA_AQUI"
+        linkPastaPDF: "https://drive.google.com/file/d/14n1qt0uku8Wf9tPE-TC57UVqYqwsElbM/view?usp=drive_link"
     },
     {
         title: "Olhos Prateados (FNAF)",
@@ -173,7 +173,7 @@ const allBooks = [
         genre: "Terror / Suspense",
         description: "Dez anos após os crimes na Pizzaria Freddy Fazbear’s, Charlie e seus amigos retornam à cidade e descobrem que os animatrônicos ainda escondem segredos letais.",
         coverUrl: "img/olhosPrateados.jpg",
-        linkPastaPDF: "LINK_DA_SUA_PASTA_AQUI"
+        linkPastaPDF: "https://drive.google.com/file/d/1jVt2E1k8tSo6iX_7kvT4SZ-dgS-2A3CY/view?usp=drive_link"
     },
     {
         title: "Phantasma",
@@ -181,7 +181,7 @@ const allBooks = [
         genre: "Dark Fantasy Romance / Romance",
         description: "Um romance gótico e sombrio onde uma jovem com habilidades espirituais entra em uma mansão assombrada e se envolve com um espírito perigoso.",
         coverUrl: "img/phantasma.jpg",
-        linkPastaPDF: "LINK_DA_SUA_PASTA_AQUI"
+        linkPastaPDF: "https://drive.google.com/file/d/11amRKNt2P7gA6rpYnytZgy7zOKml7OaR/view?usp=drive_link"
     },
     {
         title: "A Cidade dos Fantasmas",
@@ -189,7 +189,7 @@ const allBooks = [
         genre: "Fantasia / Juvenil / Aventura",
         description: "Cassidy Blake pode ver fantasmas e, em uma viagem para Edimburgo, ela deve aprender a atravessar o véu e enfrentar espíritos que não querem ser esquecidos.",
         coverUrl: "img/cidadeFantasmas.jpg",
-        linkPastaPDF: "LINK_DA_SUA_PASTA_AQUI"
+        linkPastaPDF: "https://drive.google.com/file/d/1JZg2HZ4lW0wYohpTXbKkzYpJ9RXpZ4AF/view?usp=drive_link"
     },
     {
         title: "Série: Vicious Lost Boys",
@@ -204,16 +204,16 @@ const allBooks = [
         author: "Danya Kukafka",
         genre: "Thriller / Suspense",
         description: "Após o assassinato de uma jovem popular, a vida de três pessoas se entrelaça em uma investigação que revela as obsessões e segredos de uma pequena cidade.",
-        coverUrl: "img/AGarotaNaNeve.jpg",
-        linkPastaPDF: "LINK_DA_SUA_PASTA_AQUI"
+        coverUrl: "img/garotaNeve.jpg",
+        linkPastaPDF: "https://drive.google.com/file/d/1mdLT2TtveSlNJjZgSIOyBhGBc_FM_pXj/view?usp=drive_link"
     },
     {
         title: "Mentirosos",
         author: "E. Lockhart",
         genre: "Suspense",
         description: "Acompanhe a rica e aparentemente perfeita família Sinclair em sua ilha particular, onde um segredo terrível está escondido por trás de memórias fragmentadas.",
-        coverUrl: "img/Mentirosos.jpg",
-        linkPastaPDF: "LINK_DA_SUA_PASTA_AQUI"
+        coverUrl: "img/mentirosos.jpg",
+        linkPastaPDF: "https://drive.google.com/file/d/1r-OUR9JkR1XZeX0oTT_cY_ZMur3Stzd9/view?usp=drive_link"
     }
 
 ];
